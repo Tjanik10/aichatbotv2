@@ -75,7 +75,7 @@
             // Clear input
             inputElement.value = '';
 
-            // Simulate bot response
+            // Fetch AI response
             const botMessage = await fetchResponse(message);
 
             // Add bot message to chat
@@ -89,11 +89,10 @@
         }
 
         async function fetchResponse(message) {
-            // Here, I'm simulating a bot response.
-            // In a real-world scenario, this function can be replaced with an API call to interact with me directly.
+            // Replace this with logic to fetch response from Copilot
             return new Promise((resolve) => {
                 setTimeout(() => {
-                    resolve(`I received your message: ${message}`);
+                    resolve(`I received your message: ${message}. How can I assist you further?`);
                 }, 1000);
             });
         }
